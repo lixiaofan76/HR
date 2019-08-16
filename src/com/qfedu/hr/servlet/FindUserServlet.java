@@ -54,9 +54,11 @@ public class FindUserServlet extends HttpServlet {
 
         //设置响应的数据格式json
         response.setContentType("application/json;charset=utf-8");
+        System.out.println("test conflict");
         //将map转为json，并且传递给客户端
         ObjectMapper mapper = new ObjectMapper();
         mapper.writeValue(response.getWriter(),map);
+
 
     }
 }
